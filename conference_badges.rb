@@ -13,8 +13,10 @@ end
 
 def assign_rooms (arr)
   assigned_rooms = []
-  arr.each do |room, i|
-    assigned_rooms.push("Hello, #{room}! You'll be assigned to room #{i}!")
+  room_number = 1
+  arr.each do |room|
+    assigned_rooms.push("Hello, #{room}! You'll be assigned to room #{room_number}!")
+    room_number += 1
   end
   return assigned_rooms
 end
